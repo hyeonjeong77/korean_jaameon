@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>1. 변화하는 사람</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Gowun Dodum', '맑은 고딕', sans-serif;
+      background: linear-gradient(180deg, #e6eef3 0%, #faf3f3 100%);
+      color: #222d38;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+    .snap-container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    .page-section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 38px;
+      box-sizing: border-box;
+    }
+    .topic-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #395067;
+      letter-spacing: -1px;
+      margin-bottom: 60px;
+      text-align: center;
+      margin-top: 34px;
+    }
+    .proverb-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 600px;
+      width: 100%;
+    }
+    .proverb-item {
+      margin-bottom: 32px;
+      font-size: 1.11em;
+      color: #333b4b;
+      text-align: left;
+    }
+    .proverb-item em {
+      font-style: normal;
+      font-weight: 500;
+      color: #295190;
+      background: #e3ecfa66;
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .proverb-person {
+      display: block;
+      margin-top: 8px;
+      margin-left: 6px;
+      color: #7887a6;
+      font-size: 1em;
+      font-style: italic;
+    }
+    .divider {
+      margin: 32px auto 20px auto;
+      border: none;
+      border-top: 1.5px solid #e1e6ee;
+      width: 40%;
+      opacity: 0.65;
+    }
+    .my-feeling-title {
+      font-size: 1.27em;
+      font-weight: bold;
+      color: #3d5a98;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+    .my-feeling {
+      font-size: 1.16em;
+      color: #425070;
+      background: #fafdffb7;
+      border-radius: 13px;
+      padding: 26px 20px 22px 20px;
+      min-height: 70px;
+      margin-bottom: 25px;
+      margin-top: 6px;
+      line-height: 2.02;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 1px 14px 0 rgba(41,71,170,0.07);
+    }
+    .back-btn {
+      background: #457b9d;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 36px;
+      font-size: 1.09em;
+      cursor: pointer;
+      margin: 26px auto 0 auto;
+      transition: background 0.15s, transform 0.13s;
+      box-shadow: 0 2px 14px 0 rgba(69,123,157,0.06);
+      display: block;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #264764;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .topic-title { font-size: 1.18em; margin-top: 18px;}
+      .proverb-item { font-size: 0.97em; }
+      .my-feeling { font-size: 1em; }
+      .my-feeling-title { font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="snap-container">
+    <!-- 1페이지 : 주제+명언1~4 -->
+    <section class="page-section">
+      <div class="topic-title">1. 변화하는 사람</div>
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"일단 경험하자. 그럼 내것이 된다."</em>
+          <span class="proverb-person">- 조찬희 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"오직 나 자신만이 내 삶을 변화시킬 수 있다. 그 어느 누구도 대신 해 줄 수 없는 것이다."</em>
+          <span class="proverb-person">- Carol Burnett -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"변화를 택하고 실수를 하라. 그것이 성장하는 방법이다."</em>
+          <span class="proverb-person">- Mary Tyler Moore -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"변화란 자기 발전과 같은 것이다. 그렇기에 당신이 겪어 보지 못한 상황으로 항상 자신을 이끌어라."</em>
+          <span class="proverb-person">- Pat Summitt -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 2페이지 : 명언5~9 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"우리가 변한다고 더 나은 결과가 올 것이라고 장담할 수는 없다. 하지만, 더 나은 결과를 위해서는 반드시 변해야 한다고는 말할 수 있다."</em>
+          <span class="proverb-person">- Georg Christoph Lichtenberg -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"가장 어두운 밤에도 해가 떠있다."</em>
+          <span class="proverb-person">- Lucian Freud -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"변화란 처음에는 어렵고, 중간에는 엉망이고, 마지막에는 아주 멋진 것이 된다."</em>
+          <span class="proverb-person">- Robin Sharma -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"대부분 사람들이 세상은 변해야 한다고 생각한다. 하지만, 그 어느 누구도 자신이 변해야 한다고는 생각하지 않는다."</em>
+          <span class="proverb-person">- Leo Tolstoy -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"모든 것은 생각이다. 당신은 당신의 생각을 가지고 있고, 당신 주변의 모든 것은 그 생각의 반향인 것이다. 그렇기에 당신이 그 생각을 바꿀 때, 즉 당신 스스로 변화할 때, 당신의 삶도 변하게 되는 것이다."</em>
+          <span class="proverb-person">- Maria Erving -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 3페이지 : 명언10~12 + 소감 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"항구를 떠날 용기 없이는 절대 새로운 대양을 발견할 수 없다."</em>
+          <span class="proverb-person">- André Gide -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"어제의 나는 똑똑했기에 세상을 바꾸려고 노력했다. 하지만, 오늘의 나는 현명하기에 내 자신을 바꾸려고 노력한다."</em>
+          <span class="proverb-person">- Rumi -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"신은 나에게 내가 바꿀 수 없는 것들을 받아들일 수 있는 침착함을 주셨고, 내가 바꿀 수 있는 것들을 변화시킬 수 있는 용기를 주셨고, 그 두 가지의 차이를 알 수 있는 현명함을 주셨다."</em>
+          <span class="proverb-person">- Reinhold Niebuhr -</span>
+        </li>
+      </ul>
+      <hr class="divider">
+      <div class="my-feeling-title">나의 소감</div>
+      <div class="my-feeling">
+        변화는 도전이자 성장과 발전의 기회이다.<br>
+        하지만 나는 항상 변화는 뒤로 미루고 평범함을 추구하는 사람이다.<br>
+        익숙함 속에서 안정감을 느꼈고, 실패에 대한 두려움을 가지고 있는 사람이다. <br>
+        그러나 많은 명언들이 실패하더라도 괜찮다며, <br>
+        그것 또한 성장의 일부라고 말하고 있다. <br>
+        이제는 변화로 한 걸음 나아갈 시간이다. 
+      </div>
+      <a href="index.html" class="back-btn">목록으로 돌아가기</a>
+    </section>
+  </div>
+</body>
+</html>

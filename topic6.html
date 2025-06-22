@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>6. 항상 최선을 다하는 사람</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Gowun Dodum', '맑은 고딕', sans-serif;
+      background: linear-gradient(180deg, #e6eef3 0%, #faf3f3 100%);
+      color: #222d38;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+    .snap-container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    .page-section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 38px;
+      box-sizing: border-box;
+    }
+    .topic-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #395067;
+      letter-spacing: -1px;
+      margin-bottom: 60px;
+      text-align: center;
+      margin-top: 34px;
+    }
+    .proverb-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 600px;
+      width: 100%;
+    }
+    .proverb-item {
+      margin-bottom: 32px;
+      font-size: 1.11em;
+      color: #333b4b;
+      text-align: left;
+    }
+    .proverb-item em {
+      font-style: normal;
+      font-weight: 500;
+      color: #295190;
+      background: #e3ecfa66;
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .proverb-person {
+      display: block;
+      margin-top: 8px;
+      margin-left: 6px;
+      color: #7887a6;
+      font-size: 1em;
+      font-style: italic;
+    }
+    .divider {
+      margin: 32px auto 20px auto;
+      border: none;
+      border-top: 1.5px solid #e1e6ee;
+      width: 40%;
+      opacity: 0.65;
+    }
+    .my-feeling-title {
+      font-size: 1.27em;
+      font-weight: bold;
+      color: #3d5a98;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+    .my-feeling {
+      font-size: 1.16em;
+      color: #425070;
+      background: #fafdffb7;
+      border-radius: 13px;
+      padding: 26px 20px 22px 20px;
+      min-height: 70px;
+      margin-bottom: 25px;
+      margin-top: 6px;
+      line-height: 2.02;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 1px 14px 0 rgba(41,71,170,0.07);
+    }
+    .back-btn {
+      background: #457b9d;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 36px;
+      font-size: 1.09em;
+      cursor: pointer;
+      margin: 26px auto 0 auto;
+      transition: background 0.15s, transform 0.13s;
+      box-shadow: 0 2px 14px 0 rgba(69,123,157,0.06);
+      display: block;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #264764;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .topic-title { font-size: 1.18em; margin-top: 18px;}
+      .proverb-item { font-size: 0.97em; }
+      .my-feeling { font-size: 1em; }
+      .my-feeling-title { font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="snap-container">
+    <!-- 1페이지 : 주제+명언1~5 -->
+    <section class="page-section">
+      <div class="topic-title">6. 항상 최선을 다하는 사람</div>
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"재능이란 정해진 걸음마가 아닌 배움으로 일어나 노력으로 달리는 것이다."</em>
+          <span class="proverb-person">- 김태성 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"항상 남들보다 더 열심히 살아라."</em>
+          <span class="proverb-person">- 최해린 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"누군가에게는 그 자리에 있는 것이, 누군가에게는 한 발자국만 뒤로 가는 것이 그의 최선일 수 있다."</em>
+          <span class="proverb-person">- 서윤하 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"어떤 것도 포기하지 말고, 항상 나아가라. 어려운 일도 처음부터 어려운 것은 아니다."</em>
+          <span class="proverb-person">- Robert Schuller -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"계속 움직이는 것이 중요하다. 성공의 비밀은 계속 하는 것이다."</em>
+          <span class="proverb-person">- Albert Einstein -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 2페이지 : 명언6~10 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"아무 행동도 하지 않으면 아무 일도 일어나지 않는다."</em>
+          <span class="proverb-person">- 최예린 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"네가 가지고 있는 최선의 것을 세상에 주라. 그러면 최선의 것이 돌아오리라."</em>
+          <span class="proverb-person">- M.A. Bérét -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"오늘 할 수 있는 일에 전력을 다하라. 그러면 내일에는 한 걸음 더 진보한다."</em>
+          <span class="proverb-person">- Isaac Newton -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"최선으로 출발하는 것은 최악으로 끝날 수 없다."</em>
+          <span class="proverb-person">- Robert Browning -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"실패는 고통스럽다. 그러나 최선을 다하지 못했음을 깨닫는 것은 몇 배 더 고통스럽다."</em>
+          <span class="proverb-person">- Andrew Matthews -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 3페이지 : 명언11~13 + 소감 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"당신이 할 수 있는 한 최선을 다해라. 당신이 할 수 있는 것을 당신이 할 수 있을 때 말이다. 그렇게 하면 당신은 반드시 성공하게 될 것이다."</em>
+          <span class="proverb-person">- Steve Maraboli -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"최선을 다해라. 최선을 다했는데 잘 되지 않는다 하더라도 괜찮다. 적어도 당신이 시도했다는 것만으로도 마음의 평화를 얻을 수 있을 것이다."</em>
+          <span class="proverb-person">- Akiroq Brost -</span>
+        </li>
+      </ul>
+      <hr class="divider">
+      <div class="my-feeling-title">나의 소감</div>
+      <div class="my-feeling">
+        최선을 다한다고 해서 무조건 좋은 결과가 나온다는 것은 아니다.<br>
+        하지만 최선을 다 한 만큼 후회도, 미련도 없을 것이고, <br>
+        오히려 다음에 더 발전된 모습으로 시작할 수 있는 성장의 기회가 될 것이다.<br>
+        자신이 이 일에 최선을 다해야 할 이유를 찾지 못했을 땐 <br>
+        '내일의 나'를 위해 한 걸음만 더 나아가 보는 것은 어떨까?
+      </div>
+      <a href="index.html" class="back-btn">목록으로 돌아가기</a>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>8. 미래를 생각하는 사람</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Gowun Dodum', '맑은 고딕', sans-serif;
+      background: linear-gradient(180deg, #e6eef3 0%, #faf3f3 100%);
+      color: #222d38;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+    .snap-container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    .page-section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 38px;
+      box-sizing: border-box;
+    }
+    .topic-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #395067;
+      letter-spacing: -1px;
+      margin-bottom: 60px;
+      text-align: center;
+      margin-top: 34px;
+    }
+    .proverb-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 600px;
+      width: 100%;
+    }
+    .proverb-item {
+      margin-bottom: 32px;
+      font-size: 1.11em;
+      color: #333b4b;
+      text-align: left;
+    }
+    .proverb-item em {
+      font-style: normal;
+      font-weight: 500;
+      color: #295190;
+      background: #e3ecfa66;
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .proverb-person {
+      display: block;
+      margin-top: 8px;
+      margin-left: 6px;
+      color: #7887a6;
+      font-size: 1em;
+      font-style: italic;
+    }
+    .divider {
+      margin: 32px auto 20px auto;
+      border: none;
+      border-top: 1.5px solid #e1e6ee;
+      width: 40%;
+      opacity: 0.65;
+    }
+    .my-feeling-title {
+      font-size: 1.27em;
+      font-weight: bold;
+      color: #3d5a98;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+    .my-feeling {
+      font-size: 1.16em;
+      color: #425070;
+      background: #fafdffb7;
+      border-radius: 13px;
+      padding: 26px 20px 22px 20px;
+      min-height: 70px;
+      margin-bottom: 25px;
+      margin-top: 6px;
+      line-height: 2.02;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 1px 14px 0 rgba(41,71,170,0.07);
+    }
+    .back-btn {
+      background: #457b9d;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 36px;
+      font-size: 1.09em;
+      cursor: pointer;
+      margin: 26px auto 0 auto;
+      transition: background 0.15s, transform 0.13s;
+      box-shadow: 0 2px 14px 0 rgba(69,123,157,0.06);
+      display: block;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #264764;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .topic-title { font-size: 1.18em; margin-top: 18px;}
+      .proverb-item { font-size: 0.97em; }
+      .my-feeling { font-size: 1em; }
+      .my-feeling-title { font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="snap-container">
+    <!-- 1페이지 : 주제+명언1~5 -->
+    <section class="page-section">
+      <div class="topic-title">8. 미래를 생각하는 사람</div>
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"미래는 불확실하다. 그리고 바로 이것이 미래의 좋은 점이기도 하다."</em>
+          <span class="proverb-person">- Jennifer Niven -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"당신이 원하는 미래를 만들기 위해 노력하지 않는다면, 당신은 당신에게 그냥 던져지는 미래를 견뎌낼 수밖에 없는 것이다."</em>
+          <span class="proverb-person">- John C. Maxwell -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"당신이 밝은 미래를 누릴 자격이 있다는 것을 깨닫게 된다면, 당신은 알게 될 것이다. 지금 당신이 할 수 있는 최선의 선택은 바로 당신 자신의 어두운 과거를 버리는 것이라는 것을 말이다."</em>
+          <span class="proverb-person">- Roy T. Bennett -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"멋진 미래는 뛰어난 상상력과 그것을 현실로 만들겠다는 의지를 가진 사람들이 만들어가는 것이다."</em>
+          <span class="proverb-person">- Debasish Mridha -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"때때로 우리는 우리 자신들의 미래의 정원에 물을 주기 위해 과거에 대한 두려움과 눈물에 젖을 필요가 있는 것이다."</em>
+          <span class="proverb-person">- Suzy Kassem -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 2페이지 : 명언6~10 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"과거는 우리에게 경험을 주었고, 우리를 더욱 현명하게 만들어 주었다. 그리고 그를 통해 더 아름답고 더 밝은 미래를 만들어갈 수 있게 해 준 것이다."</em>
+          <span class="proverb-person">- Debasish Mridha -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"종종 위대한 사건의 영혼은 사건 이전에 그 힘찬 발걸음을 내딛고, 내일은 오늘 이미 들어서고 있다."</em>
+          <span class="proverb-person">- Samuel Taylor Coleridge -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"미래를 예측하는 가장 좋은 방법은 그것을 창조하는 것이다."</em>
+          <span class="proverb-person">- 미상 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"돌이킬 수 없는 어제는 우리의 것이 아니지만, 이기거나 질 수 있는 내일은 우리의 것이다."</em>
+          <span class="proverb-person">- Lyndon B. Johnson -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"미래의 물결은 지금도 다가오고 있다. 그것을 막아낼 재간은 없다."</em>
+          <span class="proverb-person">- Anne Morrow Lindbergh -</span>
+        </li>
+      </ul>
+      <hr class="divider">
+      <div class="my-feeling-title">나의 소감</div>
+      <div class="my-feeling">
+        밝은 미래만을 꿈꾸지 말고, 스스로 미래의 빛을 켜 보자.<br>
+        과거에서 벗어나 다가오는 미래를 위해 하나씩 준비해 나가자.<br>
+        과거의 경험을 통해, 더욱 지혜롭게 미래를 맞이하길.
+      </div>
+      <a href="index.html" class="back-btn">목록으로 돌아가기</a>
+    </section>
+  </div>
+</body>
+</html>

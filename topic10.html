@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>10. 따뜻한 사람</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Gowun Dodum', '맑은 고딕', sans-serif;
+      background: linear-gradient(180deg, #e6eef3 0%, #faf3f3 100%);
+      color: #222d38;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+    .snap-container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    .page-section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 38px;
+      box-sizing: border-box;
+    }
+    .topic-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #395067;
+      letter-spacing: -1px;
+      margin-bottom: 60px;
+      text-align: center;
+      margin-top: 34px;
+    }
+    .proverb-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 600px;
+      width: 100%;
+    }
+    .proverb-item {
+      margin-bottom: 32px;
+      font-size: 1.11em;
+      color: #333b4b;
+      text-align: left;
+    }
+    .proverb-item em {
+      font-style: normal;
+      font-weight: 500;
+      color: #295190;
+      background: #e3ecfa66;
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .proverb-person {
+      display: block;
+      margin-top: 8px;
+      margin-left: 6px;
+      color: #7887a6;
+      font-size: 1em;
+      font-style: italic;
+    }
+    .divider {
+      margin: 32px auto 20px auto;
+      border: none;
+      border-top: 1.5px solid #e1e6ee;
+      width: 40%;
+      opacity: 0.65;
+    }
+    .my-feeling-title {
+      font-size: 1.27em;
+      font-weight: bold;
+      color: #3d5a98;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+    .my-feeling {
+      font-size: 1.16em;
+      color: #425070;
+      background: #fafdffb7;
+      border-radius: 13px;
+      padding: 26px 20px 22px 20px;
+      min-height: 70px;
+      margin-bottom: 25px;
+      margin-top: 6px;
+      line-height: 2.02;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 1px 14px 0 rgba(41,71,170,0.07);
+    }
+    .back-btn {
+      background: #457b9d;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 36px;
+      font-size: 1.09em;
+      cursor: pointer;
+      margin: 26px auto 0 auto;
+      transition: background 0.15s, transform 0.13s;
+      box-shadow: 0 2px 14px 0 rgba(69,123,157,0.06);
+      display: block;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #264764;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .topic-title { font-size: 1.18em; margin-top: 18px;}
+      .proverb-item { font-size: 0.97em; }
+      .my-feeling { font-size: 1em; }
+      .my-feeling-title { font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="snap-container">
+    <!-- 1페이지 : 주제+명언1~5 -->
+    <section class="page-section">
+      <div class="topic-title">10. 따뜻한 사람</div>
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"진정한 사랑은 계산하지 않고, 바라지 않으며, 단순히 주는 것이다."</em>
+          <span class="proverb-person">- Mother Teresa -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"사랑을 받을 때보다 사랑을 줄 때 더 행복하다."</em>
+          <span class="proverb-person">- Alfred Tennyson -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"사랑은 쉽게 포기하지 않고, 인내하며, 언제나 희망을 품는다."</em>
+          <span class="proverb-person">- 고린도전서 13장 7절 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"사랑이 깊을수록 기다림도 더 길어진다."</em>
+          <span class="proverb-person">- Fyodor Dostoevsky -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"진정으로 큰 인간은 누구에게나 따뜻한 햇살을 비추는 존재이다."</em>
+          <span class="proverb-person">- Albert Einstein -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 2페이지 : 명언6~10 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"작은 일에도 큰 사랑을 담아라. 작은 은총이 큰 행복을 만들어낸다."</em>
+          <span class="proverb-person">- Mother Teresa -</span>
+        </li>
+        
+        <li class="proverb-item">
+          <em>"한 사람에게 따뜻한 말 한마디가 천 개의 비를 막아낸다."</em>
+          <span class="proverb-person">- Robert Brault -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"행복은 주는 것에서 시작된다. 더 많은 사랑과 배려를 나누면 더욱 따뜻한 세상을 만들 수 있다."</em>
+          <span class="proverb-person">- Albert Schweitzer -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"네 이웃을 네 몸과 같이 사랑하라."</em>
+          <span class="proverb-person">- 레위기 19장 18절 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"공감은 이해의 시작이며, 공감이야말로 인간관계를 따뜻하게 하는 열쇠이다."</em>
+          <span class="proverb-person">- 미상 -</span>
+        </li>
+      </ul>
+      <hr class="divider">
+      <div class="my-feeling-title">나의 소감</div>
+      <div class="my-feeling">
+        서로를 사랑하며 살자.<br>
+        더 많이 사랑하고, 더 많이 공감하는 우리가 되자.<br>
+        서로를 인내하고 이해하는 삶, 우리의 이웃을 사랑하는 삶이<br>
+        더 나은 사람이 되는 길의 핵심이 아닐까?
+      </div>
+      <a href="index.html" class="back-btn">목록으로 돌아가기</a>
+    </section>
+  </div>
+</body>
+</html>

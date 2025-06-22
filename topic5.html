@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>5. 앞으로 나아가는 사람</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Gowun Dodum', '맑은 고딕', sans-serif;
+      background: linear-gradient(180deg, #e6eef3 0%, #faf3f3 100%);
+      color: #222d38;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+    .snap-container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    .page-section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 38px;
+      box-sizing: border-box;
+    }
+    .topic-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #395067;
+      letter-spacing: -1px;
+      margin-bottom: 60px;
+      text-align: center;
+      margin-top: 34px;
+    }
+    .proverb-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 600px;
+      width: 100%;
+    }
+    .proverb-item {
+      margin-bottom: 32px;
+      font-size: 1.11em;
+      color: #333b4b;
+      text-align: left;
+    }
+    .proverb-item em {
+      font-style: normal;
+      font-weight: 500;
+      color: #295190;
+      background: #e3ecfa66;
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .proverb-person {
+      display: block;
+      margin-top: 8px;
+      margin-left: 6px;
+      color: #7887a6;
+      font-size: 1em;
+      font-style: italic;
+    }
+    .divider {
+      margin: 32px auto 20px auto;
+      border: none;
+      border-top: 1.5px solid #e1e6ee;
+      width: 40%;
+      opacity: 0.65;
+    }
+    .my-feeling-title {
+      font-size: 1.27em;
+      font-weight: bold;
+      color: #3d5a98;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+    .my-feeling {
+      font-size: 1.16em;
+      color: #425070;
+      background: #fafdffb7;
+      border-radius: 13px;
+      padding: 26px 20px 22px 20px;
+      min-height: 70px;
+      margin-bottom: 25px;
+      margin-top: 6px;
+      line-height: 2.02;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 1px 14px 0 rgba(41,71,170,0.07);
+    }
+    .back-btn {
+      background: #457b9d;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 36px;
+      font-size: 1.09em;
+      cursor: pointer;
+      margin: 26px auto 0 auto;
+      transition: background 0.15s, transform 0.13s;
+      box-shadow: 0 2px 14px 0 rgba(69,123,157,0.06);
+      display: block;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #264764;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .topic-title { font-size: 1.18em; margin-top: 18px;}
+      .proverb-item { font-size: 0.97em; }
+      .my-feeling { font-size: 1em; }
+      .my-feeling-title { font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="snap-container">
+    <!-- 1페이지 : 주제+명언1~5 -->
+    <section class="page-section">
+      <div class="topic-title">5. 앞으로 나아가는 사람</div>
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"앞만 본다고 해서 앞으로 나아가는 것이 아니다."</em>
+          <span class="proverb-person">- 이승우 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"토끼와 거북이의 경주에서 거북이가 승리한 이유는 토끼는 상대를 보았고 거북이는 목표를 보았기 때문이다."</em>
+          <span class="proverb-person">- 문승환 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"과거는 우리에게 경험을 주었고, 우리를 더욱 현명하게 만들어 주었다. 그리고 그를 통해 더 아름답고 더 밝은 미래를 만들어갈 수 있게 해 준 것이다."</em>
+          <span class="proverb-person">- Debasish Mridha -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"당신에게 좋은 소식이 있다. 그것은 바로 당신은 어제보다 오늘 당신의 목표에 한 걸음 더 가까워 졌다는 것이다. 그렇기에 포기하지 말고 계속 나아가라."</em>
+          <span class="proverb-person">- 미상 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"숨을 깊이 내쉬어라. 그리고 이것을 생각해라. 앞으로 나아간다는 것은 한 번에 한 걸음씩 나아가는 것을 의미한다는 것을 말이다."</em>
+          <span class="proverb-person">- 미상 -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 2페이지 : 명언6~10 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"모든 것이 완벽해질 때까지 기다리지 마라. 세상에 완벽함이란 절대 없다. 어느 것에나 도전할 것들, 장애물, 완벽하지 않은 조건들이 있다. 지금 당장 시작하라. 당신이 한 걸음 걸을 때마다, 당신은 강해질 것이고, 더 많은 스킬을 쌓을 것이고, 더 자신감이 생길 것이고, 더 성공하게 될 것이다."</em>
+          <span class="proverb-person">- Mark Victor Hansen -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"어느 누구도 과거로 돌아가서 과거의 시작을 바꿀 수는 없다. 하지만, 그 누구라도 오늘부터 시작해서 새로운 결말을 만들 수는 있는 것이다."</em>
+          <span class="proverb-person">- Chico Xavier -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"실패란 잠시 돌아가는 길이지 막다른 길이 아니다. 그렇기에 실패로부터 배우고 앞으로 전진해 나가면 되는 것이다."</em>
+          <span class="proverb-person">- Roy T. Bennett -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"무언가는 완수하는 가장 좋은 방법은, 끊임없이 앞으로 나아가고, 절대 의심하지 않으며, 실수를 한 경우에는 그냥 실수했다고 말하면서, 계속 전진해 나가는 것이다."</em>
+          <span class="proverb-person">- John Frusciante -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"후회하고 있기에는 삶이 너무 짧다. 그렇기에 그냥 앞으로 나아가라."</em>
+          <span class="proverb-person">- Mike McCready -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 3페이지 : 명언11~12 + 소감 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"앞으로 넘어진다 하더라도 너무 걱정하지 마라. 왜냐하면 그런 상황이더라도 당신은 앞으로 전진한 것이기 때문이다."</em>
+          <span class="proverb-person">- Victor Kiam -</span>
+        </li>
+      </ul>
+      <hr class="divider">
+      <div class="my-feeling-title">나의 소감</div>
+      <div class="my-feeling">
+        우리의 목표를 세우자. 그 길을 가는 동안 얼마나 많은 실패와 넘어짐이 있을진 <br>
+        아무도 모르지만 멈추지 않고 계속 움직이는 것만이 진정한 '나아감'일 것이다.
+         
+      </div>
+      <a href="index.html" class="back-btn">목록으로 돌아가기</a>
+    </section>
+  </div>
+</body>
+</html>

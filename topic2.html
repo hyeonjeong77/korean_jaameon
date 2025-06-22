@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>2. 성장하는 사람</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Gowun Dodum', '맑은 고딕', sans-serif;
+      background: linear-gradient(180deg, #e6eef3 0%, #faf3f3 100%);
+      color: #222d38;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+    .snap-container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    .page-section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 38px;
+      box-sizing: border-box;
+    }
+    .topic-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #395067;
+      letter-spacing: -1px;
+      margin-bottom: 60px;  /* 여기만 60px! */
+      text-align: center;
+      margin-top: 34px;
+    }
+    .proverb-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 600px;
+      width: 100%;
+    }
+    .proverb-item {
+      margin-bottom: 32px;
+      font-size: 1.11em;
+      color: #333b4b;
+      text-align: left;
+    }
+    .proverb-item em {
+      font-style: normal;
+      font-weight: 500;
+      color: #295190;
+      background: #e3ecfa66;
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .proverb-person {
+      display: block;
+      margin-top: 8px;
+      margin-left: 6px;
+      color: #7887a6;
+      font-size: 1em;
+      font-style: italic;
+    }
+    .divider {
+      margin: 32px auto 20px auto;
+      border: none;
+      border-top: 1.5px solid #e1e6ee;
+      width: 40%;
+      opacity: 0.65;
+    }
+    .my-feeling-title {
+      font-size: 1.27em;
+      font-weight: bold;
+      color: #3d5a98;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+    .my-feeling {
+      font-size: 1.16em;
+      color: #425070;
+      background: #fafdffb7;
+      border-radius: 13px;
+      padding: 26px 20px 22px 20px;
+      min-height: 70px;
+      margin-bottom: 25px;
+      margin-top: 6px;
+      line-height: 2.02;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 1px 14px 0 rgba(41,71,170,0.07);
+    }
+    .back-btn {
+      background: #457b9d;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 36px;
+      font-size: 1.09em;
+      cursor: pointer;
+      margin: 26px auto 0 auto;
+      transition: background 0.15s, transform 0.13s;
+      box-shadow: 0 2px 14px 0 rgba(69,123,157,0.06);
+      display: block;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #264764;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .topic-title { font-size: 1.18em; margin-top: 18px;}
+      .proverb-item { font-size: 0.97em; }
+      .my-feeling { font-size: 1em; }
+      .my-feeling-title { font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="snap-container">
+    <!-- 1페이지 : 주제+명언1~5 -->
+    <section class="page-section">
+      <div class="topic-title">2. 성장하는 사람</div>
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"인생은 삶과 죽음 사이에서 선택하는 것이다. 선택을 두려워하지 마라."</em>
+          <span class="proverb-person">- 김리아 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"공부란 할 수 있기에 해야 하는 것이다."</em>
+          <span class="proverb-person">- 최서영 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"가장 큰 영광은 한 번도 실패하지 않고 힘들게 버틴 데에 있다."</em>
+          <span class="proverb-person">- Vince Lombardi -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"한계를 두는 것은 오직 당신 스스로뿐이다."</em>
+          <span class="proverb-person">- Muhammad Ali -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"무엇이든지 가능하다고 믿으면, 그것을 이룰 수 있다."</em>
+          <span class="proverb-person">- Wayne Dyer -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 2페이지 : 명언6~10 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"실패는 그저, 이번에는 더 지능적으로 시작할 수 있는 기회일 뿐이다."</em>
+          <span class="proverb-person">- Henry Ford -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"난 못해라는 말은 아무것도 이루지 못하지만, 해 볼 거야라는 말은 기적을 만들어 낸다."</em>
+          <span class="proverb-person">- J.P. Burnham -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"꿈을 이루고자 하는 용기만 있으면 모든 꿈을 이룰 수 있다."</em>
+          <span class="proverb-person">- Walt Disney -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"다른 사람이 무엇을 하는지 신경 쓰지 마라. 더 나은 당신이 되기 위해 노력하고 매일 당신의 기록을 깨뜨려라."</em>
+          <span class="proverb-person">- William Boetcker -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"내일 하겠다고 생각하는 사람은 진정으로 그 일을 하고자 하는 사람이 아니다. 어떤 일을 내일 하겠다고 남겨놓는 사람은 그 일을 영원히 끝낼 수 없다."</em>
+          <span class="proverb-person">- Osho Rajneesh -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 3페이지 : 명언11~13 + 소감 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"당신은 지체할 수도 있지만 시간은 그러하지 않을 것이다."</em>
+          <span class="proverb-person">- Benjamin Franklin -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"발전은 오늘의 활동이요, 내일에 대한 보장이다."</em>
+          <span class="proverb-person">- Ralph Waldo Emerson -</span>
+        </li>
+      </ul>
+      <hr class="divider">
+      <div class="my-feeling-title">나의 소감</div>
+      <div class="my-feeling">
+        성장을 하고 싶지 않은 사람이 어디에 있을까?<br>
+        누구나 다 성장을 하고 싶고, 발전된 내일의 자신의 모습을 보고 싶을 것이다.<br>
+        하지만 선택이라는 기로 사이에, 한계라는 벽에 부딪쳐 더이상 <br>
+        성장하지 못하는 모습을 보일 때면 '난 못해'라는 말이 절로 나온다.<br>
+        그래도 나는 '해 볼 거야'라는 말을 내뱉고자 한다.<br>
+        더 나은 내가 되기 위해 앞으로 나아가고자 한다.
+      </div>
+      <a href="index.html" class="back-btn">목록으로 돌아가기</a>
+    </section>
+  </div>
+</body>
+</html>

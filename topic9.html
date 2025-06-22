@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>9. 좋은 사람</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Gowun Dodum', '맑은 고딕', sans-serif;
+      background: linear-gradient(180deg, #e6eef3 0%, #faf3f3 100%);
+      color: #222d38;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+    .snap-container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    .page-section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 38px;
+      box-sizing: border-box;
+    }
+    .topic-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #395067;
+      letter-spacing: -1px;
+      margin-bottom: 60px;
+      text-align: center;
+      margin-top: 34px;
+    }
+    .proverb-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 600px;
+      width: 100%;
+    }
+    .proverb-item {
+      margin-bottom: 32px;
+      font-size: 1.11em;
+      color: #333b4b;
+      text-align: left;
+    }
+    .proverb-item em {
+      font-style: normal;
+      font-weight: 500;
+      color: #295190;
+      background: #e3ecfa66;
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .proverb-person {
+      display: block;
+      margin-top: 8px;
+      margin-left: 6px;
+      color: #7887a6;
+      font-size: 1em;
+      font-style: italic;
+    }
+    .divider {
+      margin: 32px auto 20px auto;
+      border: none;
+      border-top: 1.5px solid #e1e6ee;
+      width: 40%;
+      opacity: 0.65;
+    }
+    .my-feeling-title {
+      font-size: 1.27em;
+      font-weight: bold;
+      color: #3d5a98;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+    .my-feeling {
+      font-size: 1.16em;
+      color: #425070;
+      background: #fafdffb7;
+      border-radius: 13px;
+      padding: 26px 20px 22px 20px;
+      min-height: 70px;
+      margin-bottom: 25px;
+      margin-top: 6px;
+      line-height: 2.02;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 1px 14px 0 rgba(41,71,170,0.07);
+    }
+    .back-btn {
+      background: #457b9d;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 36px;
+      font-size: 1.09em;
+      cursor: pointer;
+      margin: 26px auto 0 auto;
+      transition: background 0.15s, transform 0.13s;
+      box-shadow: 0 2px 14px 0 rgba(69,123,157,0.06);
+      display: block;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #264764;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .topic-title { font-size: 1.18em; margin-top: 18px;}
+      .proverb-item { font-size: 0.97em; }
+      .my-feeling { font-size: 1em; }
+      .my-feeling-title { font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="snap-container">
+    <!-- 1페이지 : 주제+명언1~5 -->
+    <section class="page-section">
+      <div class="topic-title">9. 좋은 사람</div>
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"다정한 시선으로 나와 남을 바라볼 것."</em>
+          <span class="proverb-person">- 김가영 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"인간관계는 마치 방귀와 같다. 너무 억지로 힘주면 똥이다."</em>
+          <span class="proverb-person">- 김의양 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"생각하고 행동하자, 생각하고 말하자."</em>
+          <span class="proverb-person">- 이용희 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"내가 더 좋은 사람일 수 있게 하는 사람을 만나라."</em>
+          <span class="proverb-person">- 미상 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"격이 맞는 사람보다 결이 맞는 사람을 만나라."</em>
+          <span class="proverb-person">- 미상 -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 2페이지 : 명언6~10 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"행복해지려면 미움받을 용기도 있어야 한다. 그런 용기가 생겼을 때 인간관계는 한순간 달라진다."</em>
+          <span class="proverb-person">- Alfred Adler -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"남의 이익에 신경 써라. 분배되지 않는 이익은 결코 오래 가지 않는다."</em>
+          <span class="proverb-person">- Voltaire -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"다른 사람을 대할 때 그 사람의 몸도 내 몸같이 소중히 여기라. 내 몸만 귀한 것이 아니다. 남의 몸도 소중하다는 것을 잊지 말라. 그리고 네가 다른 사람에게 바라는 일을 네가 먼저 그에게 베풀어라."</em>
+          <span class="proverb-person">- 공자 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"사람은 서로의 입장과 처지를 바꿔 생각해야 한다."</em>
+          <span class="proverb-person">- 공자 -</span>
+        </li>
+         <li class="proverb-item">
+          <em>"자신에게는 엄격하고 남에게는 관대한 자세를 가지거라."</em>
+          <span class="proverb-person">- 공자 -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"세상에는 좋은 사람들이 많다. 그들을 만나고 있음에 감사하며 자신도 좋은 사람이 되자."</em>
+          <span class="proverb-person">- Delos Lye -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 3페이지 : 명언11~13 + 소감 -->
+    <section class="page-section">
+      <hr class="divider">
+      <div class="my-feeling-title">나의 소감</div>
+      <div class="my-feeling">
+        좋은 사람이 되기 위해서는 '내'가 먼저 좋은 사람이 되어야 한다.<br>
+        하지만 좋은 사람 곁에 항상 좋은 사람이 오진 않는다.<br> 
+        이용을 하기 위해 다가오는 사람들 또한 존재한다.<br>
+        좋은 사람을 만나고, 우리는 그 사람보다 더 좋은 사람이 될 수 있게 노력하자.
+      </div>
+      <a href="index.html" class="back-btn">목록으로 돌아가기</a>
+    </section>
+  </div>
+</body>
+</html>

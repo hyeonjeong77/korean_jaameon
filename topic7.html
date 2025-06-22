@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>7. 성공 하는 사람</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Gowun Dodum', '맑은 고딕', sans-serif;
+      background: linear-gradient(180deg, #e6eef3 0%, #faf3f3 100%);
+      color: #222d38;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+    .snap-container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    .page-section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 38px;
+      box-sizing: border-box;
+    }
+    .topic-title {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: #395067;
+      letter-spacing: -1px;
+      margin-bottom: 60px;
+      text-align: center;
+      margin-top: 34px;
+    }
+    .proverb-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 600px;
+      width: 100%;
+    }
+    .proverb-item {
+      margin-bottom: 32px;
+      font-size: 1.11em;
+      color: #333b4b;
+      text-align: left;
+    }
+    .proverb-item em {
+      font-style: normal;
+      font-weight: 500;
+      color: #295190;
+      background: #e3ecfa66;
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .proverb-person {
+      display: block;
+      margin-top: 8px;
+      margin-left: 6px;
+      color: #7887a6;
+      font-size: 1em;
+      font-style: italic;
+    }
+    .divider {
+      margin: 32px auto 20px auto;
+      border: none;
+      border-top: 1.5px solid #e1e6ee;
+      width: 40%;
+      opacity: 0.65;
+    }
+    .my-feeling-title {
+      font-size: 1.27em;
+      font-weight: bold;
+      color: #3d5a98;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+    .my-feeling {
+      font-size: 1.16em;
+      color: #425070;
+      background: #fafdffb7;
+      border-radius: 13px;
+      padding: 26px 20px 22px 20px;
+      min-height: 70px;
+      margin-bottom: 25px;
+      margin-top: 6px;
+      line-height: 2.02;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 1px 14px 0 rgba(41,71,170,0.07);
+    }
+    .back-btn {
+      background: #457b9d;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px 36px;
+      font-size: 1.09em;
+      cursor: pointer;
+      margin: 26px auto 0 auto;
+      transition: background 0.15s, transform 0.13s;
+      box-shadow: 0 2px 14px 0 rgba(69,123,157,0.06);
+      display: block;
+      font-family: inherit;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #264764;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .topic-title { font-size: 1.18em; margin-top: 18px;}
+      .proverb-item { font-size: 0.97em; }
+      .my-feeling { font-size: 1em; }
+      .my-feeling-title { font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="snap-container">
+    <!-- 1페이지 : 주제+명언1~5 -->
+    <section class="page-section">
+      <div class="topic-title">7. 성공 하는 사람</div>
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"변화의 첫 걸음은 행동에 옮기는 것이다."</em>
+          <span class="proverb-person">- Lou Gerstner (IBM 전 CEO) -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"실수를 저지른 사람이라도 두 번째 기회를 줘라."</em>
+          <span class="proverb-person">- Richard Branson (Virgin Group 회장) -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"당신의 실수에서 교훈을 얻어라."</em>
+          <span class="proverb-person">- Craig Newmark -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"사람을 먼저 생각하라. 기술은 그 다음이다."</em>
+          <span class="proverb-person">- Jerry Yang (Yahoo! 창립자) -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"거절당할 것을 미리부터 두려워 하지 말라."</em>
+          <span class="proverb-person">- Harland Sanders (KFC 창립자) -</span>
+        </li>
+      </ul>
+    </section>
+    <!-- 2페이지 : 명언6~10 -->
+    <section class="page-section">
+      <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"어떤 사업적 성공도 행복보다 중요하지 않다."</em>
+          <span class="proverb-person">- Shelly Lazarus -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"고객을 영업사원으로 만들어라."</em>
+          <span class="proverb-person">- Marc Benioff (Salesforce.com CEO) -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"고객과 함께 만나는 시간을 가져라."</em>
+          <span class="proverb-person">- Anne Mulcahy (Xerox 회장) -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"경쟁력은 제품이나 기술이 아닌 사람이 좌우한다."</em>
+          <span class="proverb-person">- Steve Ballmer (Microsoft CEO) -</span>
+        </li>
+        <li class="proverb-item">
+          <em>"직원들이 회사 일을 자기 일처럼 여기게 하라."</em>
+          <span class="proverb-person">- Jim Kilts (Gillette 전 CEO) -</span>
+        </li>
+        <ul class="proverb-list">
+        <li class="proverb-item">
+          <em>"틀에 박힌 지식들은 언제나 틀렸다."</em>
+          <span class="proverb-person">- Paul Jacobs -</span>
+        </li>
+      </ul>
+      </ul>
+    </section>
+    <!-- 3페이지 : 명언11 + 소감 -->
+    <section class="page-section">
+      
+      <hr class="divider">
+      <div class="my-feeling-title">나의 소감</div>
+      <div class="my-feeling">
+        성공한 사람들의 명언을 보면, 모두가 기술보단 사람을, <br>
+        실패로 인한 포기보단 교훈을 얻는 모습을 보인다.<br>
+        성공한 사람들이 이러한 모습을 보이는 것이 아니라,<br>
+        이 모습을 가지고 있는 사람들이 성공을 한 것은 아닐까?<br>
+        
+      </div>
+      <a href="index.html" class="back-btn">목록으로 돌아가기</a>
+    </section>
+  </div>
+</body>
+</html>
